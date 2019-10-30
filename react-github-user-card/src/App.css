@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 20vh;
@@ -13,10 +9,62 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(20px + 2vmin);
+  color: #d3bdef;
 }
 
-.App-link {
-  color: #09d3ac;
+.header img {
+  width: 150px;
+  height: 150px;
+}
+
+.header p {
+  font-size: 48px;
+}
+
+.cards {
+  width: 100%;
+}
+
+.cardContainer {
+  width: 40%;
+  margin-right: 30%;
+  margin-left: 30%;
+  padding: 20px;
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 0 1px 6px -2px #000;
+  background-color: #FFF;
+  margin-bottom: 30px;
+}
+
+.cardContainer img {
+  width: 150px;
+  height: 150px;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+
+.cardContainer h1 {
+  font-size: 3.4rem;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.cardContainer h3 {
+  font-size: 1.4rem;
+  margin-bottom: 3px;
+}
+
+.card .username {
+  font-size: 1.8rem;
+  font-style: italic;
+  margin: 3px 0 10px;
+}
+
+.userImageContainer img {
+  height: 250px;
+  width: 250px;
+  border: 3px solid #574476;
+  border-radius: 20px;
 }

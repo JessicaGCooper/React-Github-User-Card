@@ -64,8 +64,9 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  background: linear-gradient(130deg, #d3bdef 20%, #876cac  30%, #574476 70%);
 }
+
 .container {
   max-width: 800px;
   margin: 50px auto;

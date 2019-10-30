@@ -1,23 +1,17 @@
 import React from 'react'
 
 
-const FollowerCard = (props) => {
-    console.log("FollowerCard:", props)
+const FollowerCard = ({follower: { avatar_url, login, html_url, followers, following }}) => {
+    
 
     return (
         <div className="cardContainer">
             <div className="profileImgContainer">
-                <img src={props.follower.avatar_url} /> 
+                <img src={avatar_url} /> 
             </div>
             <section className="followerInfo">
-                <h2>{props.follower.name}</h2>
-                <h3>{props.follower.login}</h3>
-
-                {/* location
-                github url
-                Followers
-                Following
-                Bio  */}
+                <h1>{login}</h1>
+                <h3>GitHub Profile: <a href={html_url} >{html_url}</a></h3>
             </section>
         </div>
     )

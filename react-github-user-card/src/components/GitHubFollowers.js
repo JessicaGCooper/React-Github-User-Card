@@ -8,7 +8,9 @@ class GitHubFollowers extends React.Component {
         super();
         this.state = {
            user: {},
-           followers: []
+           followers: [],
+           indFollower: {},
+           indFollowers: [] 
         }
     }
 
@@ -30,7 +32,10 @@ class GitHubFollowers extends React.Component {
             .catch(error =>{
                 console.log("The data was not returned:", error);
             });
-    }
+        }
+    
+
+    
 
     componentDidUpdate(prevProps, prevState){
         //always write these inside conditionals
@@ -39,7 +44,16 @@ class GitHubFollowers extends React.Component {
         }
         if (prevState.followers !== this.state.followers){
             console.log("Followers state has changed")
+            console.log('Followers', this.state.followers)
         }
+        // if (prevState.indFollower !== this.state.indFollower){
+        //     console.log("indFollower state has changed")
+        //     console.log('indFollower', this.state.indFollower)
+        // }
+        // if (prevState.indFollowers !== this.state.indFollowers){
+        //     console.log("indFollowers state has changed")
+        //     console.log('indFollowers', this.state.indFollowers)
+        // }
       }
 
     render (){

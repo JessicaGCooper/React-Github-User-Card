@@ -9,8 +9,6 @@ class GitHubFollowers extends React.Component {
         this.state = {
            user: {},
            followers: [],
-           indFollower: {},
-           indFollowers: [] 
         }
     }
 
@@ -36,7 +34,6 @@ class GitHubFollowers extends React.Component {
     
 
     
-
     componentDidUpdate(prevProps, prevState){
         //always write these inside conditionals
         if (prevState.user !== this.state.user){
@@ -46,14 +43,6 @@ class GitHubFollowers extends React.Component {
             console.log("Followers state has changed")
             console.log('Followers', this.state.followers)
         }
-        // if (prevState.indFollower !== this.state.indFollower){
-        //     console.log("indFollower state has changed")
-        //     console.log('indFollower', this.state.indFollower)
-        // }
-        // if (prevState.indFollowers !== this.state.indFollowers){
-        //     console.log("indFollowers state has changed")
-        //     console.log('indFollowers', this.state.indFollowers)
-        // }
       }
 
     render (){

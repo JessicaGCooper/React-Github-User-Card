@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const FollowerCard = ({follower: { avatar_url, login, html_url, followers, following }}) => {
+const FollowerCard = ({follower: { avatar_url, login, html_url}}) => {
     
 
     return (
